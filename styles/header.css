@@ -71,7 +71,7 @@ start layer 1 = size, padding, margin, align, hover, background-shadow.
   flex: 1;
   width: 0;
   padding-left: 20px;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .placeholder::placeholder {
