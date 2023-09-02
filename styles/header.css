@@ -1,0 +1,298 @@
+.header-main-section{
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed ;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  border: none;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  height: 50px;
+  background-color: white;
+}
+
+/*
+start layer 1 = size, padding, margin, align, hover.
+*/
+
+/* left section */
+.sub-header-left{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.div-logo-menu{
+  height: 23px;
+  margin: 5px 0 0 23px;
+}
+.logo-menu{
+  height: 100%;
+  cursor: pointer;
+}
+
+.div-logo-youtube {
+  height: 20px;
+  margin: 5px 0 0 23px;
+}
+.logo-youtube {
+  height: 100%;
+  cursor: pointer;
+}
+
+/* mid */
+
+/*
+start layer 1 = size, padding, margin, align, hover, background-shadow.
+*/
+
+.sub-header-mid{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 105px 0 105px;
+}
+
+.div-placeholder{
+  border-radius: 20px 0 0 20px;
+  overflow: hidden;
+  display: flex;
+  flex: 1;
+  height: 37px;
+  width: 0;
+  box-shadow: 0 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.placeholder{
+  border-radius: 20px 0 0 20px;
+  border: none;
+  flex: 1;
+  width: 0;
+  padding-left: 20px;
+}
+
+.placeholder::placeholder {
+  font-size: 14px;
+  color: rgb(169, 166, 166);
+}
+
+.div-logosearch{
+  display: flex;
+  align-items: center;
+}
+
+.logosearch{
+  height: 23px;
+}
+.voiceSearchLogo {
+  height: 22px;
+}
+
+.button-logosearch{
+  height: 39px;
+  width: 55px;
+  display: flex;
+  background-color: rgb(242, 241, 241);
+  border: 1px solid rgb(214, 210, 210);
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+.button-logosearch:active{
+  background-color: rgb(231, 230, 230);
+}
+.button-voiceSearchLogo{
+  height: 39px;
+  width: 39px;
+  background-color: rgb(242, 241, 241);
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 10px;
+  cursor: pointer;
+}
+.button-voiceSearchLogo:active{
+  background-color: rgb(231, 230, 230);
+}
+
+/*
+end layer 1 = size, padding, margin, align, hover, background-shadow.
+*/
+
+/* right */
+
+/*
+start = size, padding, margin, align, hover.
+*/
+.sub-header-right{
+  padding-right: 3px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.right-logoUpload-div,
+.right-logoApps-div,
+.right-logoNotifications-div{
+  padding: 2px;
+  margin-top: 5px;
+  cursor: pointer;
+  display: flex;
+  width: 23px;
+  height: 23px;
+  position: relative;
+}
+
+.rightLogoNotifications-div:hover . {
+
+}
+
+
+.right-currentImage-div{
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  margin-top: 5px;
+  cursor: pointer;
+  display: flex;
+}
+/*
+end = size/padding/margin
+*/
+
+/*
+start = Mid tooltip
+*/
+
+.text-voiceSearch {
+  background-color: rgba(125, 125, 125, 0.838);
+  height: 20px;
+  font-size: 11px;
+  border-radius: 2px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  display: flex;
+  position: absolute;
+  bottom: -45px;
+  padding: 7px 10px 7px 10px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.12s;
+}
+.button-voiceSearchLogo:hover .text-voiceSearch{
+  opacity: 1;
+}
+
+.text-search{
+  background-color: rgba(125, 125, 125, 0.838);
+  height: 20px;
+  font-size: 11px;
+  border-radius: 2px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  display: flex;
+  position: absolute;
+  bottom: -45px;
+  padding: 7px 10px 7px 10px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.12s;
+}
+.button-logosearch:hover .text-search{
+  opacity: 1;
+}
+
+/*
+start = Right tooltip
+*/
+
+.notification-number{
+  position: absolute;
+  top: 0;
+  right: 2px;
+  width: 12px;
+  height: 12px;
+  font-size: 9px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: rgb(183, 2, 2);
+  color: white;
+  border-radius: 10px;
+}
+.hover-text-notifications {
+  background-color: rgba(125, 125, 125, 0.838);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 3px 10px 3px 10px;
+  height: 30px;
+  border-radius: 4px;
+  font-size: 12px;
+  position: absolute;
+  bottom: -45px;
+  left: -28px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.12s;
+  pointer-events: none;
+}
+.right-logoNotifications-div:hover .hover-text-notifications {
+  opacity: 1;
+}
+
+.text-youtube-apps {
+  background-color: rgba(125, 125, 125, 0.838);
+  width: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 10px 3px 10px;
+  height: 30px;
+  border-radius: 4px;
+  font-size: 12px;
+  position: absolute;
+  bottom: -45px;
+  left: -28px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.12s;
+  pointer-events: none;
+}
+.right-logoApps-div:hover .text-youtube-apps{
+  opacity: 1;
+}
+
+.text-upload {
+  background-color: rgba(125, 125, 125, 0.838);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 3px 10px 3px 10px;
+  height: 30px;
+  border-radius: 4px;
+  font-size: 12px;
+  position: absolute;
+  bottom: -45px;
+  left: -15px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.12s;
+  pointer-events: none;
+}
+.right-logoUpload-div:hover .text-upload{
+  opacity: 1;
+}
+
+/*
+end = Right tooltip
+*/
